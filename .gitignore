@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Env, venv
+env/
+venv/
+ENV/
+venv.bak/
+.env
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+/static/
+
+# Django app caches
+Base/__pycache__/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution
+dist/
+build/
+
+# Pytest
+.cache/
+
+# coverage
+htmlcov/
+.coverage
+
+# pip
+pip-log.txt
+
+# mypy
+.mypy_cache/

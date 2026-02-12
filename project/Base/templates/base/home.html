@@ -1,0 +1,259 @@
+{% load static %}
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Pavan Kalyan | Python Full-Stack Developer</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="bg-body text-body">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg fixed-top bg-body border-bottom">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">Pavan Kalyan</a>
+
+    <button class="navbar-toggler" type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto gap-lg-3">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="btn btn-sm btn-outline-secondary ms-lg-3" id="themeToggle">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-5 mt-5">
+
+<!-- ================= HERO ================= -->
+<section id="home" class="container py-5 min-vh-100 d-flex align-items-center reveal">
+  <div class="row w-100 align-items-center">
+
+    <div class="col-lg-7 reveal delay-1">
+      <p class="text-uppercase text-secondary fw-semibold mb-2">
+        Fresher • Backend Focused
+      </p>
+
+      <h1 class="display-5 fw-bold mb-3">
+        Pavan Kalyan <br>
+        <span class="text-primary">
+          Python Full-Stack Developer (Backend)
+        </span>
+      </h1>
+
+      <p class="lead text-muted mb-4">
+        Entry-level backend developer focused on building secure,
+        scalable web applications using Django, REST APIs,
+        and cloud deployment practices.
+      </p>
+
+      <div class="d-flex gap-3 reveal delay-2">
+        <a href="#projects" class="btn btn-primary btn-lg">View Work</a>
+        <a href="#contact" class="btn btn-outline-secondary btn-lg">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="col-lg-5 d-none d-lg-block reveal delay-3">
+      <div class="p-4 border rounded-4 shadow-sm bg-body-secondary">
+        <p class="fw-semibold mb-1">Backend &gt; Frontend</p>
+        <p class="text-muted small mb-0">
+          Django • APIs • Auth • Deployment • Security
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="container py-5 border-top reveal">
+  <div class="row">
+    <div class="col-lg-8 mx-auto text-center reveal delay-1">
+      <h2 class="fw-bold mb-4">About Me</h2>
+      <p class="text-muted lead">
+        I am a fresher backend-focused developer with strong fundamentals
+        in Python and Django. I enjoy building real backend systems,
+        understanding how applications work end-to-end, and deploying
+        them securely on cloud platforms.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="container py-5 border-top reveal">
+  <h2 class="fw-bold text-center mb-5 reveal delay-1">Skills</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4 reveal delay-1">
+      <div class="p-4 border rounded-4 h-100">
+        <h5 class="fw-bold">Backend Development</h5>
+        <p class="text-muted mb-0">
+          Python, Django, REST APIs, authentication,
+          database design, backend logic.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4 reveal delay-2">
+      <div class="p-4 border rounded-4 h-100">
+        <h5 class="fw-bold">Frontend Basics</h5>
+        <p class="text-muted mb-0">
+          HTML, CSS, Bootstrap 5, basic JavaScript
+          (used mainly to support backend apps).
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-4 reveal delay-3">
+      <div class="p-4 border rounded-4 h-100">
+        <h5 class="fw-bold">Deployment & Security</h5>
+        <p class="text-muted mb-0">
+          Development to deployment workflow,
+          Render, Docker basics, security awareness.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="container py-5 border-top reveal">
+  <h2 class="fw-bold text-center mb-5 reveal delay-1">Projects</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-6 reveal delay-1">
+      <div class="p-4 border rounded-4 h-100">
+        <h5 class="fw-bold">
+          AI Chatbot
+          <span class="badge bg-light text-dark ms-2">Gen-AI</span>
+        </h5>
+        <p class="text-muted">
+          A small chatbot project built to understand
+          Generative AI integration with backend systems.
+        </p>
+        <a href="https://github.com/pavan5116/Chatbot_project"
+           target="_blank"
+           class="fw-semibold text-decoration-none">
+          <i class="bi bi-github"></i> View Repository
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-6 reveal delay-2">
+      <div class="p-4 border rounded-4 h-100 text-muted text-center d-flex align-items-center justify-content-center">
+        <span>More backend projects coming soon</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="container py-5 border-top reveal">
+  <h2 class="fw-bold text-center mb-4">Contact</h2>
+
+  <div class="text-center">
+
+    <p class="text-muted mb-3">
+      Interested in backend roles, internships, or learning opportunities.
+    </p>
+
+    <div class="d-flex justify-content-center gap-4 fs-5">
+      <a href="mailto:pawankalyanvarikuppala2276@gmail.com">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://github.com/pavan5116" target="_blank">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/varikuppala-pawan-kalyan" target="_blank">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<script>
+  const themeToggle = document.getElementById("themeToggle");
+  const htmlEl = document.documentElement;
+  const icon = themeToggle.querySelector("i");
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme) {
+    htmlEl.setAttribute("data-bs-theme", savedTheme);
+    icon.className = savedTheme === "dark"
+      ? "bi bi-sun"
+      : "bi bi-moon-stars";
+  }
+
+  themeToggle.addEventListener("click", () => {
+    const currentTheme = htmlEl.getAttribute("data-bs-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+    htmlEl.setAttribute("data-bs-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+
+    icon.className = newTheme === "dark"
+      ? "bi bi-sun"
+      : "bi bi-moon-stars";
+  });
+</script>
+
+<script>
+  const revealElements = document.querySelectorAll(".reveal");
+
+  const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+    const revealPoint = 120;
+
+    revealElements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < windowHeight - revealPoint) {
+        el.classList.add("active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+</html>
+
+
+
