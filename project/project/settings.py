@@ -31,7 +31,8 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -124,7 +125,7 @@ USE_TZ = True
 import os
 
 STATIC_URL = "/static/"
-MEDIA_URL = '/images/'
+
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
@@ -133,6 +134,7 @@ STATICFILES_DIRS = [
 #MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
